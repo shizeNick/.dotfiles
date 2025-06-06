@@ -1,4 +1,6 @@
 # INI File format
+helpScript=sh -c "$HOME/.scripts/battery.sh"
+
 [Time]
 command=date +%R
 interval=5
@@ -10,3 +12,9 @@ helpScript=sh -c "$HOME/.scripts/battery.sh"
 command=$helpScript | grep -m 1 "%" | rev | cut -d ' ' -f1 | rev
 interval=10
 color=#9b8d7f
+
+[wttr]
+command=sh -c "$HOME/.scripts/weather.sh"
+interval=300
+color=#9b8d7f
+
