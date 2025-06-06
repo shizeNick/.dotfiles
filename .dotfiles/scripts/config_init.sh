@@ -1,4 +1,5 @@
-#!/usr/bin/env bashgit clone --bare git@github.com:shizeNick/.dotfiles.git $HOME/.dotfiles # define config alias locally since the dotfiles
+#!/usr/bin/env bashgit clone --bare git@github.com:shizeNick/.dotfiles.git $HOME/.dotfiles 
+# define config alias locally since the dotfiles
 # aren't installed on the system yet
 function config {
    git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
