@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 git clone --bare git@github.com:shizeNick/.dotfiles.git $HOME/.dotfiles 
 # define config alias locally since the dotfiles
 # aren't installed on the system yet
