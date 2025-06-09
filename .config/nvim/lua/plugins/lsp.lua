@@ -36,7 +36,7 @@ return {
             lspconfig.clangd.setup({
                 capabilities = capabilities,
             })
-            lspconfig.digestif.setup({
+            lspconfig.latex.setup({
                 capabilities = capabilities,
             })
 

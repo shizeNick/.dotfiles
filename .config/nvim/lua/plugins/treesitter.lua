@@ -16,35 +16,32 @@ return {
                     auto_install = true,
 
                     highlight = {
-                        enable = true,	
+                        enable = true,
                     },
-            })
-
-            ensure_installed = {
-                    "bash",
-                    "c",
-                    "rust",
-                    "cpp",
-                    "html",
-                    "latex",
-                    "javascript",
-                    "java",
-                    "lua",
-                    "latex",
-                    "luadoc",
-                    "luap",
-                    "markdown",
-                    "markdown_inline",
-                    "python",
-                    "toml",
-                    "typescript",
-                    "vim",
-                    "vimdoc",
-                    "xml",
-                    "yaml",
-                    "query"
-                }
-
+                    ensure_installed = {
+                        "bash",
+                        "c",
+                        "rust",
+                        "cpp",
+                        "html",
+                        "javascript",
+                        "java",
+                        "lua",
+                        "latex",
+                        "luadoc",
+                        "luap",
+                        "markdown",
+                        "markdown_inline",
+                        "python",
+                        "toml",
+                        "typescript",
+                        "vim",
+                        "vimdoc",
+                        "xml",
+                        "yaml",
+                        "query"
+                    }    })
         end,
+
     }
 }
