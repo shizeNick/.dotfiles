@@ -41,7 +41,7 @@ bindsym $mod+Shift+w exec --no-startup-id waypaper
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 
 # change suspend time 
-exec --no-startup-id xset s 3600
+exec --no-startup-id xset s 600 3600 &
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
