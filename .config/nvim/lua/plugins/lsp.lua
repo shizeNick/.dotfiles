@@ -36,7 +36,7 @@ return {
             lspconfig.clangd.setup({
                 capabilities = capabilities,
             })
-            lspconfig.latex.setup({
+            lspconfig.texlab.setup({
                 capabilities = capabilities,
             })
 

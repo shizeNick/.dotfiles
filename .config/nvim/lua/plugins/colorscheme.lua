@@ -1,16 +1,15 @@
 return {
-    --"metalelf0/black-metal-theme-neovim",
-    --
-    --config = function()
-    --    vim.o.background = "dark"
-    --    vim.cmd.colorscheme("immortal")
+    --"thedenisnikulin/vim-cyberpunk",
+    --config = function ()
+    --    vim.cmd.colorscheme("silverhand")
+    --   
     --end,
-    "thedenisnikulin/vim-cyberpunk",
+    { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000,
     config = function ()
-        vim.cmd.colorscheme("silverhand")
+        vim.cmd.colorscheme("moonfly")
        
-    end,
-
+    end, 
+    },
     --"zenbones-theme/zenbones.nvim", -- if changing colorscheme, 
     --                              -- dont forget to change or comment the config
     --config = function()

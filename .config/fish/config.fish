@@ -4,4 +4,7 @@ if status is-interactive
     
     # git aliase for dotfiles
     alias config="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+
+    #PATHS
+    #set -gx PATH $PATH ...
 end
