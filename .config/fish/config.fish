@@ -6,5 +6,5 @@ if status is-interactive
     alias config="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
     #PATHS
-    #set -gx PATH $PATH ...
+    set -gx PATH $PATH "/home/rain/.local/share/gem/ruby/3.4.0/bin"
 end
