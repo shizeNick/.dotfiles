@@ -12,7 +12,7 @@ return {
         opts = {
             auto_install = true,
             }
-    }, 
+    },
     --{
     --    "VonHeikemen/lsp-zero.nvim",
     --    branch = "v3.x",
@@ -22,7 +22,7 @@ return {
 
     {
         "neovim/nvim-lspconfig",
-        dependencies = { 
+        dependencies = {
             {"hrsh7th/cmp-nvim-lsp"}
         },
         lazy = false,
@@ -39,7 +39,6 @@ return {
             lspconfig.texlab.setup({
                 capabilities = capabilities,
             })
-
 
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
             vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})

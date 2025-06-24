@@ -23,7 +23,7 @@ font pango:monospace 8
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 # Xinit
-exec --no-startup-id xrandr --output DP-0 --primary --mode 1920x1080 --rate 240 
+exec --no-startup-id xrandr --output DP-1 --primary --mode 1920x1080 --rate 240 
 exec --no-startup-id xrandr --output HDMI-0 --mode 1920x1080 --rate 120 --rotate inverted --right-of DP-0
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -41,7 +41,7 @@ bindsym $mod+Shift+w exec --no-startup-id waypaper
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 
 # change suspend time 
-exec --no-startup-id xset s 600 3600 &
+exec --no-startup-id xset +dpms dpms 1800 3600
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
@@ -132,12 +132,12 @@ set $ws10 "10"
 exec --no-startup-id xrandr --output DP-4 --primary --mode 1080x1920 --rate 240 
 exec --no-startup-id xrandr --output HDMI-2 --mode 1920x1080 --rate 120 --rotate inverted --right-of DP-4
 # workspace monitor setup
-workspace 1 output DP-0
-workspace 2 output DP-0
-workspace 3 output DP-0
+workspace 1 output DP-1
+workspace 2 output DP-1
+workspace 3 output DP-1
 workspace 4 output HDMI-0
 workspace 5 output HDMI-0
-workspace 6 output DP-4
+workspace 6 output DP-1
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
