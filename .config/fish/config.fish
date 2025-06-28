@@ -7,4 +7,5 @@ if status is-interactive
 
     #PATHS
     set -gx PATH $PATH "/home/rain/.local/share/gem/ruby/3.4.0/bin"
+    set -gx PATH $PATH "/home/rain/Projects/simpleCserver/Games"
 end
