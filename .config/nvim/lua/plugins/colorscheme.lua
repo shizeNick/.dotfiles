@@ -14,7 +14,7 @@ return {
                                   -- dont forget to change or comment the config
     config = function()
         vim.opt.termguicolors = true
-        vim.opt.background = "light"
+        vim.opt.background = "dark"
         --vim.g.zenbones = {
         --    lightness = "warm"
         --}
