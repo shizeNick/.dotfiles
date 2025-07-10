@@ -3,6 +3,10 @@
 /.bash_profile/
 /.cache/
 /.cargo/
+/.local/src/
+/.local/share/
+/.local/lib/
+/.local/state/
 /.codetogether/
 /.ctsystem/
 /Desktop/
@@ -16,7 +20,6 @@
 /go/
 /uni/
 /.java/
-/.local/
 /.mozilla/
 /Music/
 /.npm/
